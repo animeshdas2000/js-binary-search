@@ -1,0 +1,113 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.area {
+  padding: 30px;
+  border: 3px solid #22223b;
+  margin: 10px 35%;
+  border-radius: 20px;
+}
+
+.area tr td {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #98c1d9;
+  width: 50px;
+  color: #22223b;
+}
+.box {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+button {
+  width: 150px;
+  font-size: 1.5em;
+  border: 0px;
+  background-color: #ff6d00;
+  color: white;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.custom {
+  width: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff9e00;
+  font-size: 18px;
+}
+
+@keyframes black-fade {
+  0% {
+    background: rgb(190, 49, 255);
+  }
+  100% {
+    background: rgb(255, 175, 25);
+  }
+}
+
+.highlight {
+  -webkit-animation: black-fade 1s ease-in 1;
+  animation: black-fade 1s ease-in 1;
+}
+
+/* @-webkit-keyframes focus-fade {
+  0% {
+    background: #c3c0c4;
+  }
+  100% {
+    background: #000;
+  }
+} */
+
+@keyframes focus-fade {
+  0% {
+    background: #9d4edd;
+    color: #3c096c;
+  }
+  100% {
+    background: #240046;
+  }
+}
+
+.focus {
+  background-color: #ff6d00;
+}
+
+.min {
+  -webkit-animation: focus-fade 1s ease-in 1;
+  animation: focus-fade 1s ease-in 1;
+  border-bottom: 15px solid orange;
+}
+
+.max {
+  -webkit-animation: focus-fade 1s ease-in 1;
+  animation: focus-fade 1s ease-in 1;
+}
+
+.selected {
+  -webkit-animation: focus-fade 1s ease-in 2;
+  animation: focus-fade 1s ease-in 2;
+  background-color: #3c096c;
+}
